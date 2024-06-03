@@ -1,12 +1,14 @@
 package com.ManuJay.JobMS.job;
 
+import com.ManuJay.JobMS.job.dto.JobWithCompanyDTO;
+
 import java.util.List;
 
 public interface JobService {
-    List<Job> findAll();
+    List<JobWithCompanyDTO> findAll();
     void createJob(Job job);
 
-    Job getElemtnById(Long id);
+    Job getJobById(Long id);
 
     boolean deleteJobById(Long id);
 
